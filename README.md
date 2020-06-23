@@ -4,3 +4,4 @@ This repository contains Proof of Concepts related to microservices architectura
 This POC will be implemented based on the following architecture.
 
 - Gateway Microservice
+- Service Registry/Discovery Microservice

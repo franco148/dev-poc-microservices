@@ -1,4 +1,4 @@
-package com.fral.share.knowledge.sngatewayservice;
+package com.fral.share.knowledge.registry;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;

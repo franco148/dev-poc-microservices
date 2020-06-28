@@ -1,4 +1,4 @@
-package com.fral.share.knowledge.sngatewayservice;
+package com.fral.share.knowledge.gateway;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

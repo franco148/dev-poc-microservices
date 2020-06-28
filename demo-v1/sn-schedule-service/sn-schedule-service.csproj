@@ -5,5 +5,9 @@
     <RootNamespace>sn_schedule_service</RootNamespace>
   </PropertyGroup>
 
+  <ItemGroup>
+    <PackageReference Include="Steeltoe.Discovery.ClientCore" Version="2.4.4" />
+  </ItemGroup>
+
 
 </Project>

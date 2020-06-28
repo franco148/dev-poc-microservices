@@ -6,6 +6,9 @@ spring:
           uri: E://CODE//dev-poc-microservices//demo-v1//sn-configuration-service
           search-paths:
           - ConfigData
+        # "native" is used when the native profile is active, for local tests with a classpath repo:
+        native:
+          search-locations: classpath:offline-repository/
   application:
     name: sn-configuration-service
 

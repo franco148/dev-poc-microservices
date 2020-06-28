@@ -1,4 +1,4 @@
-package com.fral.share.knowledge.snconfigurationservice;
+package com.fral.share.knowledge.configuration;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

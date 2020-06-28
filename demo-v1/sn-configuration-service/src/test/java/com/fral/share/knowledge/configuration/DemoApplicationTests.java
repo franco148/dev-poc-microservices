@@ -1,4 +1,4 @@
-package com.fral.share.knowledge.snconfigurationservice;
+package com.fral.share.knowledge.configuration;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;

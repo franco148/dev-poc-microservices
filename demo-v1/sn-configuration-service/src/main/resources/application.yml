@@ -1,0 +1,17 @@
+spring:
+  cloud:
+    config:
+      server:
+        git:
+          uri: E://CODE//dev-poc-microservices//demo-v1//sn-configuration-service
+          search-paths:
+          - ConfigData
+  application:
+    name: sn-configuration-service
+
+server:
+  port: 8091
+
+logging:
+  level:
+    org.springframework.web: DEBUG

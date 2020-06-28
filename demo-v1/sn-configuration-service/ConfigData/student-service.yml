@@ -1,0 +1,27 @@
+spring:
+  application:
+    name: student-service
+
+server:
+  port: 8092
+
+eureka:
+  client:
+    service-url:
+      default-zone: http://localhost:8761/eureka/
+    register-with-eureka: true
+    fetch-registry: true
+    healthcheck:
+      enabled: true
+  instance:
+    hostname: localhost
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: refresh
+
+logging:
+  level:
+    org.springframework.web: DEBUG

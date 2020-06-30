@@ -6,6 +6,7 @@
 
 - Typescript: `npm install -g typescript`
 - `npm install @types/express --save-dev`
+- `npm install @types/eureka-js-client --save-dev`
 
 ##### Some required steps
 - `tsc --init`

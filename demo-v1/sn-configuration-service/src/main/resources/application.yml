@@ -3,6 +3,7 @@ spring:
     config:
       server:
         git:
+          # file:///E:/CODE/dev-poc-microservices/demo-v1/sn-configuration-service
           uri: E:/CODE/dev-poc-microservices
           search-paths: /demo-v1/sn-configuration-service/ConfigData
         # "native" is used when the native profile is active, for local tests with a classpath repo:

@@ -2,3 +2,4 @@ demo-v1/sn-schedule-service/sn-schedule-service.code-workspace
 demo-v1/sn-schedule-service/.vscode/
 demo-v1/sn-schedule-service/bin/
 demo-v1/sn-schedule-service/obj/
+demo-v1/sn-course-service/node_modules/

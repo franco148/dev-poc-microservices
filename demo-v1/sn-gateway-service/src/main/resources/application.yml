@@ -1,3 +1,19 @@
+zuul:
+  prefix: /api/v1
+  routes:
+    student-service:
+      path: /student-svr/**
+      service-id: STUDENT-SERVICE
+    schedule-service:
+      path: /schedule-svr/**
+      service-id: SCHEDULE-SERVICE
+    course-service:
+      path: /course-svr/**
+      service-id: COURSE-SERVICE
+  host:
+    connect-timeout-millis: 100000000 
+    socket-timeout-millis: 100000000 
+
 eureka:
   client:
     service-url:

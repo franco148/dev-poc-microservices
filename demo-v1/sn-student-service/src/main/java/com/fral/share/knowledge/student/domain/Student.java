@@ -1,4 +1,4 @@
-package com.fral.share.knowledge.student.controller;
+package com.fral.share.knowledge.student.domain;
 
 public class Student {
     

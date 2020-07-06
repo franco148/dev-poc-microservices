@@ -5,6 +5,7 @@ using System.Threading.Tasks;
 using Microsoft.Extensions.Logging;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
+
 namespace ShareKnowledge.ScheduleService.Controllers
 {
     [Route("[controller]")]

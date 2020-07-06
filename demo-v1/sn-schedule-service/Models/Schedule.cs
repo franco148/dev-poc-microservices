@@ -5,11 +5,11 @@ namespace sn_schedule_service.Models
 {
     public class Schedule
     {
-        public Guid id { get; set; }
-        public DateTime startTime { get; set; }
-        public DateTime endTime { get; set; }
-        public List<string> days { get; set; }
-        public Guid studentId { get; set; }
-        public Guid courseId { get; set; }
+        public Guid Id { get; set; }
+        public DateTime StartTime { get; set; }
+        public DateTime EndTime { get; set; }
+        public List<string> Days { get; set; }
+        public Guid StudentId { get; set; }
+        public Guid CourseId { get; set; }
     }
 }

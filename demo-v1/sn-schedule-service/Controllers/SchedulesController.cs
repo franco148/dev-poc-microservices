@@ -14,6 +14,7 @@ namespace sn_schedule_service.Controllers
         private IList<Schedule> _schedulesList;
 
         public SchedulesController(IConfiguration config) {
+            _schedulesList = new List<Schedule>();
             _config = config;
             initializeScheduleInformation();
         }
@@ -37,8 +38,6 @@ namespace sn_schedule_service.Controllers
         #region Helpers
         private void initializeScheduleInformation() 
         {
-            _schedulesList = new List<Schedule>();
-
             // Constants
             Guid studentFrancoId = Guid.Parse("1ffe2042-bf2e-11ea-b3de-0242ac130004");
             Guid studentJuanId = Guid.Parse("1ffe2420-bf2e-11ea-b3de-0242ac130004");

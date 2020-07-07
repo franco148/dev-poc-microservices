@@ -14,6 +14,10 @@ export default class CourseService {
         return this.coursesList;
     }
 
+    addNewCourse(course: CourseModel) {
+        this.coursesList.push(course);
+    }
+
 
     private initializeCoursesInformation() {
         //

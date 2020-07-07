@@ -8,6 +8,7 @@ export default class CourseResource {
 
     constructor() {
         this.app = express();
+        this.app.use(express.json());
         this.port = SERVER_PORT;
 
         let eurekaClient = new Eureka({

@@ -18,12 +18,12 @@ public class Score {
         this.scoreId = scoreId;
     }
 
-    public float getScore() {
+    public float getScoreValue() {
         return scoreValue;
     }
 
-    public void setScore(float score) {
-        this.scoreValue = score;
+    public void setScoreValue(float scoreValue) {
+        this.scoreValue = scoreValue;
     }
 
     public UUID getCourseId() {

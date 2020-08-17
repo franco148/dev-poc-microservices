@@ -39,9 +39,9 @@ namespace sn_schedule_service.Controllers
         private void initializeScheduleInformation() 
         {
             // Constants
-            Guid studentFrancoId = Guid.Parse("1ffe2042-bf2e-11ea-b3de-0242ac130004");
-            Guid studentJuanId = Guid.Parse("1ffe2420-bf2e-11ea-b3de-0242ac130004");
-            Guid studentClaudiaId = Guid.Parse("1ffe24f2-bf2e-11ea-b3de-0242ac130004");
+            Guid studentFrancoId = Guid.Parse("4bdf3e86-e02a-11ea-87d0-0242ac130003");
+            Guid studentJuanId = Guid.Parse("4bdf4174-e02a-11ea-87d0-0242ac130003");
+            Guid studentClaudiaId = Guid.Parse("4bdf4610-e02a-11ea-87d0-0242ac130003");
 
             Guid courseCalculoId = Guid.Parse("1ffe21b4-bf2e-11ea-b3de-0242ac130004");
             Guid courseProgrammingId = Guid.Parse("1ffe27cc-bf2e-11ea-b3de-0242ac130004");

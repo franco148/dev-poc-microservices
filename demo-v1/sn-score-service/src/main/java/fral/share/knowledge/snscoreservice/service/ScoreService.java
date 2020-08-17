@@ -4,8 +4,11 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.UUID;
 
+import org.springframework.stereotype.Service;
+
 import fral.share.knowledge.snscoreservice.domain.Score;
 
+@Service
 public class ScoreService {
     
     private List<Score> scoresCollection;
@@ -13,6 +16,10 @@ public class ScoreService {
     public ScoreService() {
         scoresCollection = new ArrayList<>();
         initializeScoresInformation();
+    }
+
+    public List<Score> getAllScores() {
+        return scoresCollection;
     }
 
     private void initializeScoresInformation() {

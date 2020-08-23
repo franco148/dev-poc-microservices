@@ -10,6 +10,9 @@ zuul:
     course-service:
       path: /course-svr/**
       service-id: COURSE-SERVICE
+    score-service:
+      path: /score-svr/**
+      service-id: SCORE-SERVICE
   host:
     connect-timeout-millis: 100000000 
     socket-timeout-millis: 100000000 

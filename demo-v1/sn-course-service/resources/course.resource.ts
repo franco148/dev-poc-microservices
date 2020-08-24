@@ -13,8 +13,8 @@ export default class CourseResource {
 
         let eurekaClient = new Eureka({
             instance: {
-                app: 'course-service',
                 instanceId: 'course-service',
+                app: 'course-service',                
                 hostName: 'localhost',
                 ipAddr: '127.0.0.1',
                 statusPageUrl: `http://localhost:${SERVER_PORT}`,
@@ -23,7 +23,7 @@ export default class CourseResource {
                     '$': SERVER_PORT,
                     '@enabled': true
                 },
-                vipAddress: 'sn-course-service',
+                vipAddress: 'course-service',
                 dataCenterInfo: {
                     '@class': 'com.netflix.appinfo.InstanceInfo$DefaultDataCenterInfo',
                     'name': 'MyOwn'

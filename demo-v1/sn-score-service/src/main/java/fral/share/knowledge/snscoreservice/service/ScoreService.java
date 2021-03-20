@@ -3,6 +3,8 @@ package fral.share.knowledge.snscoreservice.service;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.UUID;
+import java.util.stream.Collector;
+import java.util.stream.Collectors;
 
 import org.springframework.stereotype.Service;
 
@@ -20,6 +22,12 @@ public class ScoreService {
 
     public List<Score> getAllScores() {
         return scoresCollection;
+    }
+
+    public List<Score> getScoresByStudent(UUID studentId) {
+        return scoresCollection.stream()
+            .filter(score -> score.getStudentId().equals(studentId))
+            .collect(Collectors.toList());
     }
 
     private void initializeScoresInformation() {

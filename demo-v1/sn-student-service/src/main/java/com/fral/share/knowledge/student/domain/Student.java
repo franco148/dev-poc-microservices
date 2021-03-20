@@ -1,5 +1,6 @@
 package com.fral.share.knowledge.student.domain;
 
+import java.util.List;
 import java.util.UUID;
 
 public class Student {
@@ -8,6 +9,7 @@ public class Student {
     private String name;
     private String lastName;
     private String code;
+    private List<Score> scores;
 
     
     public UUID getId() {
@@ -40,5 +42,13 @@ public class Student {
 
     public void setCode(String code) {
         this.code = code;
+    }
+
+    public List<Score> getScores() {
+        return scores;
+    }
+
+    public void setScores(List<Score> scores) {
+        this.scores = scores;
     }
 }

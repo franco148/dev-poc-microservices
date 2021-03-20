@@ -2,9 +2,12 @@ package com.fral.share.knowledge.student.service;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Optional;
 import java.util.UUID;
 
+import com.fral.share.knowledge.student.domain.Score;
 import com.fral.share.knowledge.student.domain.Student;
+import com.fral.share.knowledge.student.feign.ScoresFeignClient;
 
 import org.springframework.stereotype.Service;
 
@@ -12,16 +15,34 @@ import org.springframework.stereotype.Service;
 public class StudentService {
 
     private List<Student> studentsCollection;
+    private ScoresFeignClient scoreClient;
 
 
-    public StudentService() {
+    public StudentService(ScoresFeignClient scoreClient) {
         studentsCollection = new ArrayList<>();
         initializeStudentsInformation();
+
+        this.scoreClient = scoreClient;
     }
 
     
     public List<Student> getAllStudents() {        
         return studentsCollection;
+    }
+
+    public Student getStudentInfo(UUID studentId) {
+        List<Score> studentScores = scoreClient.getStudentScores(studentId);
+
+        Optional<Student> student = studentsCollection.stream()
+                    .filter(st -> st.getId().equals(studentId))
+                    .findFirst();
+        
+        if(student.isPresent()) {
+            student.get().setScores(studentScores);
+            return student.get();
+        }
+
+        return null;
     }
 
 
